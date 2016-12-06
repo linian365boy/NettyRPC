@@ -14,7 +14,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import newlandframework.netty.rpc.core.MessageSendExecutor;
 import newlandframework.netty.rpc.serialize.support.RpcSerializeProtocol;
-import org.apache.commons.lang.time.StopWatch;
+import org.apache.commons.lang3.time.StopWatch;
 
 public class RpcParallelTest {
 

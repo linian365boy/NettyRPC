@@ -57,7 +57,7 @@ public class MessageRecvExecutor implements ApplicationContextAware, Initializin
         this.serializeProtocol = Enum.valueOf(RpcSerializeProtocol.class, serializeProtocol);
     }
 
-    public static void submit(Callable<Boolean> task, ChannelHandlerContext ctx, MessageRequest request, MessageResponse response) {
+    public static void submit(Callable<Boolean> task, final ChannelHandlerContext ctx, final MessageRequest request, final MessageResponse response) {
         if (threadPoolExecutor == null) {
             synchronized (MessageRecvExecutor.class) {
                 if (threadPoolExecutor == null) {

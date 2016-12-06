@@ -15,7 +15,7 @@ import java.util.Map;
 import java.util.concurrent.Callable;
 import newlandframework.netty.rpc.model.MessageRequest;
 import newlandframework.netty.rpc.model.MessageResponse;
-import org.apache.commons.lang.reflect.MethodUtils;
+import org.apache.commons.lang3.reflect.MethodUtils;
 
 public class MessageRecvInitializeTask implements Callable<Boolean> {
 
